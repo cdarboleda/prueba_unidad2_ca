@@ -12,3 +12,14 @@
 [2022-07-29 19:51:46] [ DEBUG] [PruebaUnidad2CaApplication:100] PacienteSencillo [cedula=1751146786, nombre=Cristian, fechaNacimiento=2000-04-02T00:00, genero=M]
 [2022-07-29 19:51:46] [ DEBUG] [PruebaUnidad2CaApplication:100] PacienteSencillo [cedula=1245789865, nombre=David, fechaNacimiento=1972-04-02T00:00, genero=M]
 [2022-07-29 19:51:46] [ DEBUG] [PruebaUnidad2CaApplication:100] PacienteSencillo [cedula=1474145286, nombre=Jorge, fechaNacimiento=1972-04-02T00:00, genero=M]
+[2022-07-29 19:58:36] [ DEBUG] [PruebaUnidad2CaApplication:52] Insertar paciente 1Paciente [id=null, cedula=12312, nombre=Ana, apellido=Casas, fechaNacimiento=2000-04-02T00:00, codigoSeguro=123456, estatura=1.72, peso=69.0, genero=F, citasMedicas=null]
+[2022-07-29 19:58:36] [ DEBUG] [PruebaUnidad2CaApplication:66] Insertar paciente 2Paciente [id=null, cedula=15445, nombre=Jorge, apellido=Enriquez, fechaNacimiento=1972-04-02T00:00, codigoSeguro=654321, estatura=1.8, peso=74.0, genero=M, citasMedicas=null]
+[2022-07-29 19:58:36] [ DEBUG] [PruebaUnidad2CaApplication:79] Insertar doctor 1Doctor [id=null, cedula=1221321, nombre=Manuel, apellido=Villacis, fechaNacimiento=1969-05-04T00:00, numeroConsultorio=3, codigoSenescyt=123545, genero=M, citasMedicas=null]
+[2022-07-29 19:58:36] [ DEBUG] [PruebaUnidad2CaApplication:92] Insertar doctor 2Doctor [id=null, cedula=1745231, nombre=Ulises, apellido=Vaca, fechaNacimiento=1995-02-01T00:00, numeroConsultorio=1, codigoSenescyt=112335, genero=M, citasMedicas=null]
+[2022-07-29 19:58:36] [ DEBUG] [PruebaUnidad2CaApplication:95] Agendar una cita
+[2022-07-29 19:58:36] [ DEBUG] [PruebaUnidad2CaApplication:98] Actualizar una cita
+[2022-07-29 19:58:36] [ DEBUG] [PruebaUnidad2CaApplication:102] Reporte eficiente
+[2022-07-29 19:58:36] [ DEBUG] [PruebaUnidad2CaApplication:105] PacienteSencillo [cedula=1751146786, nombre=Cristian, fechaNacimiento=2000-04-02T00:00, genero=M]
+[2022-07-29 19:58:36] [ DEBUG] [PruebaUnidad2CaApplication:105] PacienteSencillo [cedula=1245789865, nombre=David, fechaNacimiento=1972-04-02T00:00, genero=M]
+[2022-07-29 19:58:36] [ DEBUG] [PruebaUnidad2CaApplication:105] PacienteSencillo [cedula=1474145286, nombre=Jorge, fechaNacimiento=1972-04-02T00:00, genero=M]
+[2022-07-29 19:58:36] [ DEBUG] [PruebaUnidad2CaApplication:105] PacienteSencillo [cedula=15445, nombre=Jorge, fechaNacimiento=1972-04-02T00:00, genero=M]

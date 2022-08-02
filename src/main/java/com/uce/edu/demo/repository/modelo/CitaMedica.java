@@ -30,10 +30,10 @@ public class CitaMedica {
 	private LocalDateTime fechaCita;
 	
 	@Column(name = "cime_valor_cita")
-	private BigDecimal valorCita;
+	private BigDecimal valor;
 	
 	@Column(name = "cime_lugar_cita")
-	private String lugarCita;
+	private String lugar;
 	
 	@Column(name = "cime_diagnostico")
 	private String diagnostico;
@@ -55,8 +55,8 @@ public class CitaMedica {
 	
 	@Override
 	public String toString() {
-		return "CitaMedica [id=" + id + ", numero=" + numero + ", fechaCita=" + fechaCita + ", valorCita=" + valorCita
-				+ ", lugarCita=" + lugarCita + ", diagnostico=" + diagnostico + ", receta=" + receta
+		return "CitaMedica [id=" + id + ", numero=" + numero + ", fechaCita=" + fechaCita + ", valorCita=" + valor
+				+ ", lugarCita=" + lugar + ", diagnostico=" + diagnostico + ", receta=" + receta
 				+ ", fechaProximaCita=" + fechaProximaCita + ", doctor=" + doctor + ", paciente=" + paciente + "]";
 	}
 
@@ -86,19 +86,19 @@ public class CitaMedica {
 	}
 
 	public BigDecimal getValorCita() {
-		return valorCita;
+		return valor;
 	}
 
 	public void setValorCita(BigDecimal valorCita) {
-		this.valorCita = valorCita;
+		this.valor = valorCita;
 	}
 
 	public String getLugarCita() {
-		return lugarCita;
+		return lugar;
 	}
 
 	public void setLugarCita(String lugarCita) {
-		this.lugarCita = lugarCita;
+		this.lugar = lugarCita;
 	}
 
 	public String getDiagnostico() {

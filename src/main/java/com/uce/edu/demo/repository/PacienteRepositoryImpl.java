@@ -1,5 +1,8 @@
 package com.uce.edu.demo.repository;
 
+import java.time.LocalDateTime;
+import java.util.List;
+
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.TypedQuery;
@@ -8,6 +11,7 @@ import javax.transaction.Transactional;
 import org.springframework.stereotype.Repository;
 
 import com.uce.edu.demo.repository.modelo.Paciente;
+import com.uce.edu.demo.repository.to.PacienteSencillo;
 
 @Repository
 @Transactional
@@ -35,6 +39,18 @@ public class PacienteRepositoryImpl implements IPacienteRepository {
 		TypedQuery<Paciente> myQuery = this.entityManager.createQuery(sql, Paciente.class);
 		myQuery.setParameter("cedula", cedula);
 		return myQuery.getSingleResult();
+	}
+	
+	@Override
+	public List<PacienteSencillo> reporteEficiente(LocalDateTime fecha, String genero) {
+		// TODO Auto-generated method stub
+		String sql = "SELECT NEW com.uce.edu.demo.repository.to.PacienteSencillo(p.cedula, p.nombre, p.fechaNacimiento, p.genero) "
+				+ "FROM Paciente p WHERE p.fechaNacimiento > :fecha AND p.genero = :genero";
+		TypedQuery<PacienteSencillo> myQuery = this.entityManager.createQuery(sql, PacienteSencillo.class);
+		myQuery.setParameter("fecha", fecha);
+		myQuery.setParameter("genero", genero);
+		
+		return myQuery.getResultList();
 	}
 
 	@Override

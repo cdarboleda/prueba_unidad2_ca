@@ -44,14 +44,14 @@ public class Doctor {
 	private String genero;
 	
 	@OneToMany(mappedBy = "doctor")
-	private List<CitaMedica> citasMedicas;
+	private List<CitaMedica> citas;
 
 
 	@Override
 	public String toString() {
 		return "Doctor [id=" + id + ", cedula=" + cedula + ", nombre=" + nombre + ", apellido=" + apellido
 				+ ", fechaNacimiento=" + fechaNacimiento + ", numeroConsultorio=" + numeroConsultorio
-				+ ", codigoSenescyt=" + codigoSenescyt + ", genero=" + genero + ", citasMedicas=" + citasMedicas + "]";
+				+ ", codigoSenescyt=" + codigoSenescyt + ", genero=" + genero + ", citasMedicas=" + citas + "]";
 	}
 
 
@@ -122,11 +122,11 @@ public class Doctor {
 	}
 
 	public List<CitaMedica> getCitasMedicas() {
-		return citasMedicas;
+		return citas;
 	}
 
 	public void setCitasMedicas(List<CitaMedica> citasMedicas) {
-		this.citasMedicas = citasMedicas;
+		this.citas = citasMedicas;
 	}
 	
 	
